@@ -31,18 +31,27 @@ div {
   height: 100px;
   top: calc(50% - 50px);
   width: 200px;
-
+  opacity: 0;
+  transition: all 200m6 linear;
   background-color: limegreen;
+}
+
+.box-show {
+    opacity: 1;
 }
 
 .diamond {
   height: 80px;
-  right: 2em;
+  right: -7em;
   top: calc(50% - 40px);
   width: 80px;
-
+  transition: all 400ms linear;
   background-color: hotpink;
   transform: rotate(45deg);
+}
+
+.diamond-move {
+    right: 6em;
 }
 
 .panel {
