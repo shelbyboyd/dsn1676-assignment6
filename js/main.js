@@ -13,7 +13,7 @@ $move.on ('click', function () {
 });
 
 var $panel = $('.panel');
-var $collapse = $ ('.btn-collapse-expand');
+var $collapse = $('.btn-collapse-expand');
 
 $collapse.on ('click', function () {
     $panel.toggleClass ('panel-collapse');
