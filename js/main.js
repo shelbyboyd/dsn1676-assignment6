@@ -11,3 +11,21 @@ var $move = $('.btn-move');
 $move.on ('click', function () {
         $diamond.toggleClass ('diamond-move');
 });
+
+var $panel = $('.panel');
+var $collapse = $ ('.btn-collapse-expand');
+
+$collapse.on ('click', function () {
+    $panel.toggleClass ('panel-collapse');
+});
+
+var $cirlce = $('circle');
+var $ballBounce = $('btn-bounce');
+
+$ballBounce.on ('click', function () {
+    $cirlce.toggleClass ('ball-bounce');
+});
+
+$circle.on('webkitAnimationEnd animationend', function () {
+    $circle.removeClass('ball-bounce');
+});

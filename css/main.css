@@ -57,12 +57,17 @@ div {
 .panel {
   width: 250px;
   top: 50%;
-
+  -webkit-transform: translateY(-50%);
   background-color: yellow;
   transform: translateY(-50%);
-
+  max-height: 0;
   color: darkgoldenrod;
   text-align: center;
+  transition: all 200ms linear;
+}
+
+.panel-collapse {
+    max-height: 10em;
 }
 
 .panel h2 {
@@ -74,9 +79,69 @@ div {
   height: 100px;
   top: calc(50% - 50px);
   width: 100px;
-
+  right: -7em;
   background-color: orange;
   border-radius: 50%;
+}
+.ball-bounce {
+    -webkit-animation: ball-bounce 1.5s linear;
+    animation: ball-bounce 1.5s linear;
+}
+
+@-webkit-keyframes ball-bounce {
+    
+    0% {
+    top: calc(50%);
+    top: 2em;
+    }
+    
+    25% {
+    top: calc(50% - 80px);
+    right: 4em;
+    }
+    
+    50% {
+    top: calc(50% - 40px);
+    right: 6em;
+    }
+        
+    75% {
+    top: calc(50% - 60px);
+    right: 8em;
+    }
+    
+    100% { 
+    top: calc(50% - 20px);
+    right: 10em;
+    }
+}
+
+@keyframes ball-bounce {
+    
+    0% {
+    top: calc(50%);
+    top: 2em;
+    }
+    
+    25% {
+    top: calc(50% - 80px);
+    right: 4em;
+    }
+    
+    50% {
+    top: calc(50% - 40px);
+    right: 6em;
+    }
+        
+    75% {
+    top: calc(50% - 60px);
+    right: 8em;
+    }
+    
+    100% { 
+    top: calc(50% - 20px);
+    right: 10em;
+    }
 }
 
 .list {
