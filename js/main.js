@@ -19,13 +19,21 @@ $collapse.on ('click', function () {
     $panel.toggleClass ('panel-collapse');
 });
 
-var $cirlce = $('circle');
-var $ballBounce = $('btn-bounce');
+var $cirlce = $('.circle');
+var $ballBounce = $('.btn-bounce');
 
 $ballBounce.on ('click', function () {
     $cirlce.toggleClass ('ball-bounce');
 });
 
-$circle.on('webkitAnimationEnd animationend', function () {
-    $circle.removeClass('ball-bounce');
+var $list = $('.list');
+var $append = $('.btn-append');
+
+$append.on ('click', function () {
+    
+    var $li =$('<li>').html ('new-list-item');
+    
+    $list.prepend($li);
+    $list.toggleClass ('list-append');
 });
+
