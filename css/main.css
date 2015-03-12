@@ -84,8 +84,8 @@ div {
   border-radius: 50%;
 }
 .ball-bounce {
-    -webkit-animation: ball-bounce 1.5s linear;
-    animation: ball-bounce 1.5s linear;
+    -webkit-animation: ball-bounce 1s linear;
+    animation: ball-bounce 1s linear;
 }
 
 @-webkit-keyframes ball-bounce {
